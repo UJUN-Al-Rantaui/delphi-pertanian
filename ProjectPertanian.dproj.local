@@ -3,11 +3,15 @@
 	<Transactions>
     <Transaction>2024/03/30 10:38:40.000.244,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/06/05 08:01:59.000.976,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 08:02:52.000.738,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Delphi Pertanian\UnitMenuUtama.dfm</Transaction>
-    <Transaction>2024/06/05 08:02:52.000.738,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Delphi Pertanian\UnitMenuUtama.pas</Transaction>
-    <Transaction>2024/06/05 08:04:32.000.781,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Delphi Pertanian\ProjectPertanian.dproj</Transaction>
-    <Transaction>2024/06/18 08:19:21.362,=D:\Delphi Pertanian\Unit1.pas</Transaction>
-    <Transaction>2024/06/18 09:04:27.811,D:\Delphi Pertanian\Upetani.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
-    <Transaction>2024/06/18 09:04:27.811,D:\Delphi Pertanian\Upetani.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
+    <Transaction>2024/06/05 08:02:52.000.738,D:\Delphi Pertanian\UnitMenuUtama.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 08:02:52.000.738,D:\Delphi Pertanian\UnitMenuUtama.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/06/05 08:04:32.000.781,D:\Delphi Pertanian\ProjectPertanian.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/06/18 08:19:21.000.362,=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Unit1.pas=D:\Delphi Pertanian\Upetani.pas</Transaction>
+    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Unit1.dfm=D:\Delphi Pertanian\Upetani.dfm</Transaction>
+    <Transaction>2024/06/18 17:07:01.003,=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 17:13:44.618,D:\Delphi Pertanian\Ugudang.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 17:13:44.618,D:\Delphi Pertanian\Ugudang.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
+    <Transaction>2024/06/18 17:36:26.627,=D:\Delphi Pertanian\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

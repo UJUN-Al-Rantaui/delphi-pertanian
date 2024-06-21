@@ -99,8 +99,6 @@ object Petani: TPetani
     Top = 229
     Width = 250
     Height = 23
-    Date = 45461.000000000000000000
-    Time = 45461.000000000000000000
     TabOrder = 4
   end
   object Button1: TButton
@@ -214,7 +212,7 @@ object Petani: TPetani
   object BindSourceDB1: TBindSourceDB
     DataSet = TablePetani
     ScopeMappings = <>
-    Left = 720
+    Left = 736
     Top = 384
   end
   object BindingsList1: TBindingsList

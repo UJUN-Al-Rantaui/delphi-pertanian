@@ -2,8 +2,8 @@ object FormMenuUtama: TFormMenuUtama
   Left = 0
   Top = 0
   Caption = 'Aplikasi Pertanian'
-  ClientHeight = 442
-  ClientWidth = 628
+  ClientHeight = 478
+  ClientWidth = 787
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
