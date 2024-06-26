@@ -107,11 +107,15 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Ugudang.pas">
-            <Form>Gudang</Form>
+            <Form>FormGudang</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit1.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="Upanen.pas">
+            <Form>FormPanen</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Upenjualanpanen.pas">
+            <Form>FormPenjualanPanen</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

@@ -1,25 +1,49 @@
-unit Ugudang;
+unit Upanen;
 
 interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.StdCtrls,
-  Vcl.Grids, Vcl.DBGrids;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  System.Rtti, System.Bindings.Outputs, Vcl.Bind.Editors, Data.Bind.EngExt,
+  Vcl.Bind.DBEngExt, Vcl.StdCtrls, Data.Bind.Components, Data.Bind.DBScope,
+  Vcl.ComCtrls, Vcl.Mask, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Buttons, Data.Win.ADODB;
 
 type
-  TFormGudang = class(TForm)
-    GudangQuery: TADOQuery;
+  TFormPanen = class(TForm)
     DBGrid1: TDBGrid;
-    DataSource1: TDataSource;
-    GudangQueryNIP: TStringField;
-    GudangQueryNamaPetani: TStringField;
-    GudangQueryNamaTanaman: TStringField;
-    GudangQueryKG: TIntegerField;
-    GudangQueryTelpPetani: TStringField;
-    GudangQueryAlamatPetani: TStringField;
+    TablePanen: TADOTable;
+    dsPanen: TDataSource;
+    TablePanenid: TAutoIncField;
+    TablePanennip: TStringField;
+    TablePanentanaman: TStringField;
+    TablePanenjumlah_kg: TIntegerField;
+    TablePanentanggal: TDateField;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DateTimePicker1: TDateTimePicker;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkControlToField1: TLinkControlToField;
+    Tambah: TButton;
+    Simpan: TButton;
+    Ubah: TButton;
+    Batal: TButton;
+    Keluar: TButton;
+    Hapus: TButton;
     Cetak: TButton;
     PrintDialog1: TPrintDialog;
+    procedure TambahClick(Sender: TObject);
+    procedure SimpanClick(Sender: TObject);
+    procedure UbahClick(Sender: TObject);
+    procedure HapusClick(Sender: TObject);
+    procedure BatalClick(Sender: TObject);
+    procedure KeluarClick(Sender: TObject);
     procedure CetakClick(Sender: TObject);
   private
     { Private declarations }
@@ -28,15 +52,20 @@ type
   end;
 
 var
-  FormGudang: TFormGudang;
+  FormPanen: TFormPanen;
 
 implementation
 
 {$R *.dfm}
 
-uses UnitMenuUtama, Vcl.Printers;
+uses UnitMenuUtama, Vcl.Printers, Ugudang;
 
-procedure TFormGudang.CetakClick(Sender: TObject);
+procedure TFormPanen.BatalClick(Sender: TObject);
+begin
+  TablePanen.Cancel;
+end;
+
+procedure TFormPanen.CetakClick(Sender: TObject);
 const
   FONT_SIZE_TITLE = 14;
   FONT_SIZE_HEADER = 12;
@@ -58,7 +87,7 @@ begin
       SavedFont.Assign(Printer.Canvas.Font);
       Printer.BeginDoc;
       try
-        Title := 'Laporan Data Gudang';
+        Title := 'Laporan Data Panen';
 
         Printer.Canvas.Font.Size := FONT_SIZE_TITLE;
         Printer.Canvas.Font.Style := [fsBold];
@@ -82,15 +111,11 @@ begin
           ColumnWidths[i]:=Printer.Canvas.TextWidth(DBGrid1.Columns[i].Title.Caption) + CELL_PADDING*2;
           if DBGrid1.Columns[i].Title.Caption = 'NIP' then
             ColumnWidths[i] := ColumnWidths[i] + 150
-          else if DBGrid1.Columns[i].Title.Caption = 'Nama Petani' then
-            ColumnWidths[i] := ColumnWidths[i] + 100
-          else if DBGrid1.Columns[i].Title.Caption = 'Nama Tanaman' then
-            ColumnWidths[i] := ColumnWidths[i] + 100
+          else if DBGrid1.Columns[i].Title.Caption = 'Tanaman' then
+            ColumnWidths[i] := ColumnWidths[i] + 300
           else if DBGrid1.Columns[i].Title.Caption = 'KG' then
             ColumnWidths[i] := ColumnWidths[i] + 200
-          else if DBGrid1.Columns[i].Title.Caption = 'Telp. Petani' then
-            ColumnWidths[i] := ColumnWidths[i] + 50
-          else if DBGrid1.Columns[i].Title.Caption = 'Alamat Petani' then
+          else if DBGrid1.Columns[i].Title.Caption = 'Tanggal' then
             ColumnWidths[i] := ColumnWidths[i] + 200;
 
           TotalWidth := TotalWidth + ColumnWidths[i];
@@ -153,5 +178,30 @@ begin
   end;
 end;
 
+procedure TFormPanen.HapusClick(Sender: TObject);
+begin
+  TablePanen.Delete;
+end;
+
+procedure TFormPanen.KeluarClick(Sender: TObject);
+begin
+  FormPanen.Close;
+end;
+
+procedure TFormPanen.SimpanClick(Sender: TObject);
+begin
+  TablePanen.Post;
+  FormGudang.GudangQuery.Requery();
+end;
+
+procedure TFormPanen.TambahClick(Sender: TObject);
+begin
+  TablePanen.Insert;
+end;
+
+procedure TFormPanen.UbahClick(Sender: TObject);
+begin
+  TablePanen.Edit;
+end;
 
 end.

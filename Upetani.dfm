@@ -3,7 +3,7 @@ object Petani: TPetani
   Top = 0
   Align = alBottom
   Caption = 'Petani'
-  ClientHeight = 437
+  ClientHeight = 426
   ClientWidth = 784
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -56,7 +56,7 @@ object Petani: TPetani
   end
   object DBGrid1: TDBGrid
     Left = 264
-    Top = 8
+    Top = -3
     Width = 512
     Height = 353
     DataSource = dsPetani
@@ -164,13 +164,22 @@ object Petani: TPetani
     DataSource = dsPetani
     TabOrder = 11
   end
+  object Button7: TButton
+    Left = 584
+    Top = 384
+    Width = 75
+    Height = 25
+    Caption = 'Cetak'
+    TabOrder = 12
+    OnClick = Button7Click
+  end
   object TablePetani: TADOTable
     Active = True
     Connection = FormMenuUtama.PertanianConnection
     CursorType = ctStatic
     TableName = 'petani'
-    Left = 632
-    Top = 384
+    Left = 696
+    Top = 344
     object TablePetaniid: TAutoIncField
       DisplayLabel = 'ID'
       DisplayWidth = 4
@@ -190,10 +199,12 @@ object Petani: TPetani
       Size = 255
     end
     object TablePetanitelepon: TStringField
+      DisplayLabel = 'Telepon'
       DisplayWidth = 13
       FieldName = 'telepon'
     end
     object TablePetanialamat: TStringField
+      DisplayLabel = 'Alamat'
       DisplayWidth = 15
       FieldName = 'alamat'
       Size = 255
@@ -206,8 +217,8 @@ object Petani: TPetani
   end
   object dsPetani: TDataSource
     DataSet = TablePetani
-    Left = 680
-    Top = 384
+    Left = 696
+    Top = 392
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = TablePetani
@@ -218,8 +229,8 @@ object Petani: TPetani
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 588
-    Top = 381
+    Left = 732
+    Top = 341
     object LinkControlToField1: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
@@ -227,5 +238,9 @@ object Petani: TPetani
       Control = DateTimePicker1
       Track = True
     end
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 664
+    Top = 360
   end
 end

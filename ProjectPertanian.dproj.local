@@ -3,15 +3,31 @@
 	<Transactions>
     <Transaction>2024/03/30 10:38:40.000.244,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/06/05 08:01:59.000.976,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 08:02:52.000.738,D:\Delphi Pertanian\UnitMenuUtama.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 08:02:52.000.738,D:\Delphi Pertanian\UnitMenuUtama.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2024/06/05 08:04:32.000.781,D:\Delphi Pertanian\ProjectPertanian.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/06/05 08:02:52.000.738,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Delphi Pertanian\UnitMenuUtama.dfm</Transaction>
+    <Transaction>2024/06/05 08:02:52.000.738,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Delphi Pertanian\UnitMenuUtama.pas</Transaction>
+    <Transaction>2024/06/05 08:04:32.000.781,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Delphi Pertanian\ProjectPertanian.dproj</Transaction>
     <Transaction>2024/06/18 08:19:21.000.362,=D:\Delphi Pertanian\Unit1.pas</Transaction>
-    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Unit1.pas=D:\Delphi Pertanian\Upetani.pas</Transaction>
-    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Unit1.dfm=D:\Delphi Pertanian\Upetani.dfm</Transaction>
-    <Transaction>2024/06/18 17:07:01.003,=D:\Delphi Pertanian\Unit1.pas</Transaction>
-    <Transaction>2024/06/18 17:13:44.618,D:\Delphi Pertanian\Ugudang.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
-    <Transaction>2024/06/18 17:13:44.618,D:\Delphi Pertanian\Ugudang.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
-    <Transaction>2024/06/18 17:36:26.627,=D:\Delphi Pertanian\Unit1.pas</Transaction>
-  </Transactions>
+    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Upetani.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
+    <Transaction>2024/06/18 09:04:27.000.811,D:\Delphi Pertanian\Upetani.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 17:07:01.000.003,=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/18 17:13:44.000.618,D:\Delphi Pertanian\Unit1.dfm=D:\Delphi Pertanian\Ugudang.dfm</Transaction>
+    <Transaction>2024/06/18 17:13:44.000.618,D:\Delphi Pertanian\Unit1.pas=D:\Delphi Pertanian\Ugudang.pas</Transaction>
+    <Transaction>2024/06/18 17:36:26.000.627,=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/26 03:08:36.087,D:\Delphi Pertanian\Upanen.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/26 03:08:36.087,D:\Delphi Pertanian\Upanen.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
+    <Transaction>2024/06/26 07:20:18.140,=D:\Delphi Pertanian\Unit1.pas</Transaction>
+    <Transaction>2024/06/26 07:20:44.703,D:\Delphi Pertanian\Upenjualanpanen.dfm=D:\Delphi Pertanian\Unit1.dfm</Transaction>
+    <Transaction>2024/06/26 07:20:44.703,D:\Delphi Pertanian\Upenjualanpanen.pas=D:\Delphi Pertanian\Unit1.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Ugudang.pas"/>
+    <File Path="Ugudang.dfm"/>
+    <File Path="Upanen.pas"/>
+    <File Path="Upanen.dfm"/>
+    <File Path="UnitMenuUtama.pas"/>
+    <File Path="UnitMenuUtama.dfm"/>
+    <File Path="Upetani.pas"/>
+    <File Path="Upetani.dfm"/>
+    <File Path="Upenjualanpanen.pas"/>
+    <File Path="Upenjualanpanen.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>

@@ -19,15 +19,19 @@ object FormMenuUtama: TFormMenuUtama
     Top = 248
     object Petani1: TMenuItem
       Caption = 'Petani'
+      OnClick = Petani1Click
     end
     object Panen1: TMenuItem
       Caption = 'Panen'
+      OnClick = Panen1Click
     end
     object Gudang1: TMenuItem
       Caption = 'Gudang'
+      OnClick = Gudang1Click
     end
     object PenjualanPanen1: TMenuItem
       Caption = 'Penjualan Panen'
+      OnClick = PenjualanPanen1Click
     end
   end
   object PertanianConnection: TADOConnection
