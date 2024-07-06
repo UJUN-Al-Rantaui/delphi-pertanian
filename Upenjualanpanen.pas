@@ -11,21 +11,14 @@ uses
 
 type
   TFormPenjualanPanen = class(TForm)
-    DBGrid1: TDBGrid;
-    TablePenjualanPanen: TADOTable;
-    dsPenjualanPanen: TDataSource;
-    TablePenjualanPanenid: TAutoIncField;
-    TablePenjualanPanennip: TStringField;
-    TablePenjualanPanentanaman: TStringField;
-    TablePenjualanPanenjumlah_kg: TIntegerField;
-    TablePenjualanPanentanggal: TDateField;
     Label1: TLabel;
-    DBEdit1: TDBEdit;
     Label2: TLabel;
-    DBEdit2: TDBEdit;
     Label3: TLabel;
-    DBEdit3: TDBEdit;
     Label4: TLabel;
+    DBGrid1: TDBGrid;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
     Tambah: TButton;
     Simpan: TButton;
     Ubah: TButton;
@@ -33,8 +26,15 @@ type
     Batal: TButton;
     Keluar: TButton;
     Cetak: TButton;
-    PrintDialog1: TPrintDialog;
     DateTimePicker1: TDateTimePicker;
+    TablePenjualanPanen: TADOTable;
+    TablePenjualanPanenid: TAutoIncField;
+    TablePenjualanPanennip: TStringField;
+    TablePenjualanPanentanaman: TStringField;
+    TablePenjualanPanenjumlah_kg: TIntegerField;
+    TablePenjualanPanentanggal: TDateField;
+    dsPenjualanPanen: TDataSource;
+    PrintDialog1: TPrintDialog;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkControlToField1: TLinkControlToField;

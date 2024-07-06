@@ -15,8 +15,8 @@ object FormMenuUtama: TFormMenuUtama
   WindowState = wsMaximized
   TextHeight = 15
   object MainMenu1: TMainMenu
-    Left = 440
-    Top = 248
+    Left = 208
+    Top = 24
     object Petani1: TMenuItem
       Caption = 'Petani'
       OnClick = Petani1Click

@@ -153,6 +153,8 @@ object FormPenjualanPanen: TFormPenjualanPanen
     Top = 181
     Width = 334
     Height = 23
+    Date = 45469.000000000000000000
+    Time = 45469.000000000000000000
     TabOrder = 11
   end
   object TablePenjualanPanen: TADOTable
@@ -160,8 +162,8 @@ object FormPenjualanPanen: TFormPenjualanPanen
     Connection = FormMenuUtama.PertanianConnection
     CursorType = ctStatic
     TableName = 'penjualan_panen'
-    Left = 656
-    Top = 64
+    Left = 664
+    Top = 8
     object TablePenjualanPanenid: TAutoIncField
       DisplayLabel = 'ID'
       DisplayWidth = 5
@@ -192,24 +194,24 @@ object FormPenjualanPanen: TFormPenjualanPanen
   end
   object dsPenjualanPanen: TDataSource
     DataSet = TablePenjualanPanen
-    Left = 720
-    Top = 72
+    Left = 680
+    Top = 80
   end
   object PrintDialog1: TPrintDialog
-    Left = 560
-    Top = 64
+    Left = 472
+    Top = 40
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = TablePenjualanPanen
     ScopeMappings = <>
-    Left = 472
-    Top = 40
+    Left = 560
+    Top = 16
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 540
-    Top = 29
+    Left = 612
+    Top = 13
     object LinkControlToField1: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

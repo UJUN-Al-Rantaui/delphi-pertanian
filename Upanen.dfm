@@ -90,6 +90,8 @@ object FormPanen: TFormPanen
     Top = 173
     Width = 304
     Height = 23
+    Date = 45469.000000000000000000
+    Time = 45469.000000000000000000
     TabOrder = 4
   end
   object Tambah: TButton
@@ -160,8 +162,8 @@ object FormPanen: TFormPanen
     Connection = FormMenuUtama.PertanianConnection
     CursorType = ctStatic
     TableName = 'panen'
-    Left = 656
-    Top = 56
+    Left = 608
+    Top = 72
     object TablePanenid: TAutoIncField
       DisplayLabel = 'ID'
       DisplayWidth = 5
@@ -192,19 +194,19 @@ object FormPanen: TFormPanen
   end
   object dsPanen: TDataSource
     DataSet = TablePanen
-    Left = 704
-    Top = 56
+    Left = 680
+    Top = 80
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = TablePanen
     ScopeMappings = <>
-    Left = 696
-    Top = 8
+    Left = 704
+    Top = 16
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 644
+    Left = 604
     Top = 5
     object LinkControlToField1: TLinkControlToField
       Category = 'Quick Bindings'
@@ -215,7 +217,7 @@ object FormPanen: TFormPanen
     end
   end
   object PrintDialog1: TPrintDialog
-    Left = 600
+    Left = 544
     Top = 8
   end
 end

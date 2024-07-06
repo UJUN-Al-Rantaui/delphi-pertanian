@@ -99,6 +99,8 @@ object Petani: TPetani
     Top = 229
     Width = 250
     Height = 23
+    Date = 45479.000000000000000000
+    Time = 45479.000000000000000000
     TabOrder = 4
   end
   object Button1: TButton
